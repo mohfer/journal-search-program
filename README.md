@@ -1,97 +1,97 @@
 # 📚 Journal Search Program
 
-Program ini memungkinkan pencarian jurnal akademik menggunakan algoritma **Linear Search** dan **Binary Search**. Dirancang sebagai proyek mata kuliah Struktur Data, aplikasi ini menyediakan antarmuka baris perintah untuk mencari jurnal berdasarkan **judul**, **tahun terbit**, atau **nama penulis**.
+This program enables searching for academic journals using **Linear Search** and **Binary Search** algorithms. Designed as a Data Structures course project, the application provides a command-line interface to search for journals by **title**, **publication year**, or **author name**.
 
 ---
 
-## 📝 Deskripsi
+## 📝 Description
 
-Journal Search Program mengambil data dari file CSV yang ditentukan melalui variabel lingkungan (`.env`) dan menyediakan pilihan metode pencarian:
+The Journal Search Program retrieves data from a CSV file specified through environment variables (`.env`) and offers the following search methods:
 
-### 🔍 Metode Pencarian
+### 🔍 Search Methods
 1. **Linear Search**  
-   Mencari secara berurutan dari awal hingga akhir.
+    Searches sequentially from beginning to end.
 2. **Binary Search**  
-   Menggunakan algoritma pencarian biner — membutuhkan data yang sudah terurut.
+    Uses binary search algorithm — requires pre-sorted data.
 
 ---
 
-## ⚙️ Kebutuhan Sistem
+## ⚙️ System Requirements
 
-- Python 3.8 atau lebih baru
-- Paket yang dibutuhkan:
-  - `pandas` (versi 2.2.3)
-  - `python-dotenv` (versi 1.0.0)
-
----
-
-## 🛠️ Instalasi
-
-1. Clone repository:
-   ```bash
-   git clone <repository-url>
-   cd search-program
-   ```
-
-2. Install dependensi:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Salin file `.env.example` menjadi `.env`:
-   ```bash
-   cp .env.example .env
-   ```
+- Python 3.8 or newer
+- Required packages:
+  - `pandas` (version 2.2.3)
+  - `python-dotenv` (version 1.0.0)
 
 ---
 
-## 🚀 Penggunaan
+## 🛠️ Installation
 
-Jalankan program dengan:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/mohfer/journal-search-program.git
+    cd search-program
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Copy `.env.example` to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+
+---
+
+## 🚀 Usage
+
+Run the program with:
 ```bash
 python main.py
 ```
 
-Ikuti petunjuk di terminal:
+Follow the terminal prompts:
 
-1. Pilih metode pencarian (Linear atau Binary)
-2. Pilih kriteria pencarian (Judul, Tahun, atau Penulis)
-3. Masukkan kata kunci yang ingin dicari
-
----
-
-## 📄 Format CSV yang Didukung
-
-CSV yang digunakan harus memiliki struktur kolom sebagai berikut:
-
-| Nama Kolom | Deskripsi | Tipe |
-|------------|-----------|------|
-| No | Nomor urut | Integer |
-| NIM | NIM Mahasiswa | String |
-| Nama Mahasiswa | Nama Mahasiswa | String |
-| Sumber Database | Nama database | String |
-| Fokus Kata Kunci | Fokus kata kunci (No. 1/2/3 sesuai soal) | String |
-| Judul Paper | Judul Jurnal | String |
-| Tahun Terbit | Tahun terbit | String/Integer |
-| Nama Penulis | Nama penulis | String |
-| Abstrak | Abstrak jurnal | Text |
-| Kesimpulan | Kesimpulan jurnal | Text |
-| Link Paper | URL ke jurnal | String |
+1. Select search method (Linear or Binary)
+2. Choose search criteria (Title, Year, or Author)
+3. Enter your search keyword
 
 ---
 
-## ✨ Fitur
+## 📄 Supported CSV Format
 
-- Animasi loading saat mengambil data
-- Formatting teks untuk tampilan yang lebih rapi
-- Penanganan error saat pengambilan data
-- Dukungan untuk pencarian linear dan biner
-- Tampilan hasil pencarian yang bersih
+The CSV file must have the following column structure:
+
+| Column Name |
+|-------------|
+| No |
+| NIM |
+| Nama Mahasiswa |
+| Sumber Database |
+| Fokus kata kunci (No. 1/2/3 sesuai soal) |
+| Judul Paper |
+| Tahun Terbit |
+| Nama Penulis |
+| Abstrak |
+| Kesimpulan |
+| Link Paper |
 
 ---
 
-## ⚠️ Catatan
+## ✨ Features
 
-- Binary search hanya mendukung pencarian dengan kata kunci **tepat (exact match)** dan sebaiknya digunakan untuk **kata tunggal**
-- Linear search mendukung pencarian **parsial** pada kolom yang dipilih
-- Pastikan URL CSV dapat diakses dari jaringan Anda
+- Loading animation when retrieving data
+- Text formatting for cleaner display
+- Error handling during data retrieval
+- Support for linear and binary search
+- Clean search results display
+
+---
+
+## ⚠️ Notes
+
+- Binary search only supports **exact match** keywords and is best used for **single words**
+- Linear search supports **partial** matches in the selected column
+- Ensure the CSV URL is accessible from your network
