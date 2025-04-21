@@ -30,7 +30,7 @@ The Journal Search Program retrieves data from a CSV file specified through envi
 1. Clone the repository:
     ```bash
     git clone https://github.com/mohfer/journal-search-program.git
-    cd search-program
+    cd journal-search-program
     ```
 
 2. Install dependencies:
