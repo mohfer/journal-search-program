@@ -43,6 +43,12 @@ The Journal Search Program retrieves data from a CSV file specified through envi
     cp .env.example .env
     ```
 
+4. Update the Google Sheets ID in the `.env` file:
+    ```
+    URL=https://docs.google.com/spreadsheets/d/{id}/export?format=csv
+    ```
+    Replace `{id}` with your actual Google Sheet ID.
+
 ---
 
 ## 🚀 Usage
